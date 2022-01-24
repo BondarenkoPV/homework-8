@@ -1,10 +1,11 @@
 /* секция 3 */
-.our-work-section {
+
+@media (min-width: 1200px) and (max-width: 1920px) {
+  .our-work-section {
     background: #ffffff;
     padding-bottom: 94px;
   }
   .our-work {
-    
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
@@ -21,20 +22,20 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 50px;
   }
-  
+
   .our-work__list {
     list-style: none;
     display: flex;
     & :nth-child(3) {
-    margin-right: 0px;
-    }}
-  
+      margin-right: 0px;
+    }
+  }
+
   .our-work__item {
     margin-right: 30px;
   }
-  
+
   /* линия с текстом  */
   .our-work__box {
     position: relative;
@@ -48,7 +49,7 @@
     padding-top: 27px;
     padding-bottom: 27px;
   }
-  
+
   .our-work__text {
     font-family: Roboto;
     font-style: normal;
@@ -60,3 +61,4 @@
     text-transform: uppercase;
     color: #ffffff;
   }
+}

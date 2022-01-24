@@ -1,9 +1,9 @@
 @import "./variables/reset";
 @import "./variables/color";
 body {
-    background: $white-background;
-    font-family: Roboto;
-  }
-  @import "./components/header-portfolio";
-  @import "./components/maine-portfolio";
-  @import "./components/footer";
+  background: $white-background;
+  font-family: Roboto;
+}
+@import "./components/header-portfolio";
+@import "./components/maine-portfolio";
+@import "./components/footer";

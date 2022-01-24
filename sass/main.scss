@@ -1,18 +1,20 @@
 @import "./variables/reset";
 @import "./variables/color";
 body {
-    background: $white-background;
-    font-family: Roboto;
-  }
+  background: $white-background;
+  font-family: Roboto;
+}
 @import "./components/header";
 @import "./components/hero";
 @import "./components/section-description";
+
 @import "./components/our-work-section";
 @import "./components/section-command";
-@import "./components/regular-cliets";
+@import "./components/regular-clients";
 @import "./components/footer";
 @import "./components/modal";
-
-
-
- 
+@media (min-width: 320px) and (max-width: 1199px) {
+  .our-work-section {
+    display: none;
+  }
+}
