@@ -1,24 +1,104 @@
 /* header */
 @media (min-width: 480px) and (max-width: 767px) {
   .header {
+    position: relative;
+    
     background: #ffffff;
   }
   .header-conteiner {
+    
     padding-left: 15px;
     padding-right: 15px;
-
+    padding-top: 0;
+    padding-bottom: 0;
     margin-left: auto;
     margin-right: auto;
   }
+ 
+  .menu-button{
+    position: absolute;
+    top:15px;
+    right: 15px;
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: #fff;
+  }
+  .menu-button .icon-cross{
+  display: none;
+  }
+  .menu-button .is-open .icon-cross{
+    display: block;
+  }
+  .menu-button .is-open .icon-menu{
+    display: none;
+  }
+  .mob-menu{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+   bottom: 0;
+    
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 480px;
+    height: 796px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+    &.is-open{display: block;}
+
+  }
+  
+  .icon-cross .icon-menu{
+    fill: black;
+    color: black;
+  }
+  .menu-button:hover,.menu-button:focus{
+    color: #2196F3;;
+  }
+  
+
+.menu__link{
+  font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+letter-spacing: 0.02em;
+color: #2196F3;
+text-decoration: none;
+box-sizing: border-box;
+
+
+}
+.menu__item+.menu__item{
+  margin-left: 10px;
+}
+.menu__list :not(:first-child){
+  padding-left: 10px;
+  border-left: 1px solid rgba(33, 33, 33, 0.2);
+  
+}
+
+.menu__list{
+  position: absolute;
+  left: 24px;
+  bottom: 48px;
+  display: flex;
+  list-style: none;
+  
+}
 
   .nav__list,
   .contacts__list {
-    display: flex;
+    display: block;
   }
 
-  .contacts {
-    margin-left: auto;
-  }
+ 
 
   /* Логотип */
   .header-logo {
@@ -29,8 +109,19 @@
     line-height: 1.19;
     text-decoration: none;
     letter-spacing: 0.03em;
-    padding-top: 24px;
-    padding-bottom: 25px;
+   
+  }
+  .nav__link{
+    font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 47px;
+text-align: center;
+letter-spacing: 0.02em;
+text-decoration: none
+;
+color: #212121;
   }
 
   .logo-blue {
@@ -44,58 +135,75 @@
   .contacts__list {
     list-style: none;
   }
-  .nav__link,
+  
   .contacts__link {
     text-decoration: none;
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 24px;
+    line-height: 28px;
     letter-spacing: 0.02em;
-    color: #212121;
+    
+    color: #757575;
     transition-property: color, transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .nav__item {
-    margin-left: 93px;
-    & + & {
-      margin-left: 50px;
+  .nav{
+    display: flex;
+    flex-direction: column;
+    display: block;
+    
     }
-  }
+    .contacts{
+      display: block;
+      display: flex;
+      flex-direction: column;
+      margin-top: 306px;
+      
+    }
+    .contacts__item{
+
+     
+    }
+    .nav__item +.nav__item{
+      margin-top: 32px;
+     
+    }
+  
   .nav__link {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    // padding-top: 32px;
+    // padding-bottom: 32px;
     &:hover,
     &:focus {
       color: #2196f3;
     }
   }
 
-  .contacts__list {
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
+.contact__tel{
+  position: absolute;
+  left: 24px;
+  bottom: 250px;
+  font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 34px;
+line-height: 40px;
+
+letter-spacing: 0.02em;
+
+color: #2196F3;
+
+}
+
+
 
   .contacts__item + .contacts__item {
-    margin-left: 50px;
+    
   }
-
-  .contacts__svg-mail {
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
-    fill: currentColor;
-  }
-
-  .contacts__svg-phone {
-    width: 10px;
-    height: 16px;
-    margin-right: 10px;
-    fill: currentColor;
-  }
+ 
 
   .contacts__link {
     color: #757575;
@@ -105,19 +213,18 @@
     }
   }
 
-  .nav__studio {
-    color: #2196f3;
-    position: relative;
-    &::after {
-      content: "";
-      position: absolute;
-      right: 0%;
-      bottom: -34px;
-
-      width: 48px;
-      height: 4px;
-      border-radius: 2px;
-      background-color: #2196f3;
-    }
+         .nav__studio {
+    color: #2196f3;}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   }
-}

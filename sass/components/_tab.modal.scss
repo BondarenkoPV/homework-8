@@ -24,7 +24,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
+    width: 450px;
+    height: 609px;
     padding: 40px;
     background-color: #ffffff;
   }
@@ -114,6 +115,8 @@
     box-sizing: border-box;
     border-radius: 4px;
     padding-left: 42px;
+    width: 370px;
+    height: 40px;
     cursor: pointer;
   }
 
@@ -122,6 +125,8 @@
     box-sizing: border-box;
     border-radius: 4px;
     resize: none;
+    width: 370px;
+    height: 120px;
     padding-top: 12px;
     padding-bottom: 12px;
     padding-left: 16px;
@@ -185,13 +190,14 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 14px;
     letter-spacing: 0.03em;
+    
     color: #757575;
   }
 
-  .boxcheckbox__text-blue {
+  .box-checkbox__text{
     color: #2196f3;
     text-decoration: underline;
     margin-left: 5px;

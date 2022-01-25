@@ -20,7 +20,19 @@
             
             
             <a href="./main.html" class="header-logo"><span class="logo-blue">Web</span><span class="logo-black">Studio</span></a>
-            <div class="mob-menu">
+       
+            <div class="mob-menu" id="mob-menu" data-menu>
+                <button type="button" class="menu-button is-open" 
+                aria-expanded="false" 
+                aria-controls="mob-menu" data-menu-button>
+                   <svg
+                   width="40"
+                   height="40"
+                   aria-label="Переключатель мобильного меню">
+                   <use class="icon-cross" href="./img/menu.svg#icon-menu-close"></use>
+                   <use class="icon-menu" href="./img/menu.svg#icon-iconmenu"></use>
+                 </svg> 
+                </button>
               <nav class="nav">
                <ul class="nav__list">
                 
@@ -47,11 +59,16 @@
                     <svg class="contacts__svg-phone">
                         <use href="./img/new.svg#icon-phone"></use>
                     </svg>
-                    +38 096 111 11 11</a>
+                    <span class="contact__tel">+38 096 111 11 11</span></a>
                      </li>
                  </ul>
-    
                 </div>
+                  <ul class="menu__list">
+                      <li class="menu__item"><a href="#" class="menu__link"> Instagram</a></li>
+                      <li class="menu__item"><a href="#" class="menu__link"> Twitter</a></li>
+                      <li class="menu__item"><a href="#" class="menu__link"> Facebook</a></li>
+                      <li class="menu__item"><a href="#" class="menu__link"> LinkedIn</a></li>
+                  </ul>
             </div>
     
     </div>
