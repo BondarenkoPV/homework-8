@@ -7,3 +7,34 @@ body {
 @import "./components/header-portfolio";
 @import "./components/maine-portfolio";
 @import "./components/footer";
+@media  (max-width: 1199px) {
+  .our-work-section {
+    display: none;
+  }
+}
+@media(max-width: 767px){
+  .contacts__svg-mail {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
+    display: none;
+  }
+
+  .contacts__svg-phone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: currentColor;
+    display: none;
+  }
+  }
+  @media (min-width: 767px) and (max-width: 1920px){
+
+    .menu__item{
+    display: none;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1920px) { .menu-button{
+    display: none;
+  }}

@@ -18,17 +18,15 @@
   }
   .mob-menu {
     display: flex;
-   
-  }
+    width: 100%;
+   }
   .nav__list,
   .contacts__list {
     display: flex;
     list-style: none;
   }
 
-    .contacts {
-     margin-left: auto;
-      }
+   
    
    
   /* Логотип */
@@ -105,6 +103,9 @@
     &:focus {
       color: #2196f3;
     }
+  }
+  .menu-link-position{
+    margin-left: auto;
   }
 
     .nav__studio {

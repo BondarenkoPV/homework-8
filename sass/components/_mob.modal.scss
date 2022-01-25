@@ -1,5 +1,5 @@
 /* модалка */
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .backdrop {
     position: fixed;
     top: 0;
@@ -23,7 +23,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 450px;
-    height: 609px;
+    
     padding: 40px;
     background-color: #ffffff;
   }

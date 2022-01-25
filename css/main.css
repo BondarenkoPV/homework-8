@@ -29,7 +29,7 @@ body {
 }
 
 /* header */
-@media (min-width: 480px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .header {
     position: relative;
     background: #ffffff;
@@ -37,19 +37,13 @@ body {
   .header-conteiner {
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 0;
-    padding-bottom: 0;
     margin-left: auto;
     margin-right: auto;
   }
   .menu-button {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    margin: 0;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
     padding: 0;
     border: none;
     background-color: #fff;
@@ -64,17 +58,24 @@ body {
     display: none;
   }
   .mob-menu {
-    position: relative;
-    top: 0;
-    left: 0;
+    position: absolute;
+    top: 50px;
     right: 0;
-    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
     padding-top: 48px;
     padding-bottom: 48px;
     padding-left: 20px;
     padding-right: 20px;
-    width: 480px;
-    height: 796px;
     background: #FFFFFF;
     -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
@@ -109,9 +110,7 @@ body {
     border-left: 1px solid rgba(33, 33, 33, 0.2);
   }
   .menu__list {
-    position: absolute;
-    left: 24px;
-    bottom: 48px;
+    margin-top: 64px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -190,7 +189,10 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-top: 306px;
+    margin-top: auto;
+  }
+  .contacts__item + .contacts__item {
+    margin-top: 32px;
   }
   .nav__item + .nav__item {
     margin-top: 32px;
@@ -199,7 +201,6 @@ body {
     color: #2196f3;
   }
   .contact__tel {
-    position: absolute;
     left: 24px;
     bottom: 250px;
     font-family: Roboto;
@@ -239,6 +240,7 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 100%;
     margin-left: 88px;
   }
   .nav__list {
@@ -249,6 +251,9 @@ body {
     padding-bottom: 32px;
     margin-left: auto;
   }
+  .menu-link-position {
+    margin-left: auto;
+  }
   .contacts {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -257,10 +262,8 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-left: auto;
     padding-top: 21px;
     padding-bottom: 21px;
-    margin-left: auto;
   }
   .contacts__item + .contacts__item {
     margin-top: 10px;
@@ -373,6 +376,7 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 100%;
   }
   .nav__list,
   .contacts__list {
@@ -380,9 +384,6 @@ body {
     display: -ms-flexbox;
     display: flex;
     list-style: none;
-  }
-  .contacts {
-    margin-left: auto;
   }
   /* Логотип */
   .header-logo {
@@ -454,6 +455,9 @@ body {
   .contacts__link:hover, .contacts__link:focus {
     color: #2196f3;
   }
+  .menu-link-position {
+    margin-left: auto;
+  }
   .nav__studio {
     color: #2196f3;
     position: relative;
@@ -477,7 +481,7 @@ body {
 }
 
 /* Секция герой */
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .hero-section {
     background: #2f303a;
     padding-top: 118px;
@@ -491,14 +495,14 @@ body {
   }
 }
 
-@media (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 320px) and (max-width: 767px) and (min-resolution: 2dppx) {
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
   .hero-section {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/mob.hed.2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/mob.hed.2x.jpg);
   }
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .hero__text {
     margin-left: auto;
     margin-right: auto;
@@ -649,7 +653,7 @@ body {
 }
 
 /* секция 2 */
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .section-description {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -897,7 +901,7 @@ body {
 }
 
 /* секция 4 */
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .section-command {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -1248,7 +1252,7 @@ body {
 }
 
 /* секция 5 */
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .regular-cliets {
     background: #ffffff;
     padding-top: 60px;
@@ -2177,7 +2181,7 @@ body {
 }
 
 /* модалка */
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .backdrop {
     position: fixed;
     top: 0;
@@ -2202,7 +2206,6 @@ body {
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     width: 450px;
-    height: 609px;
     padding: 40px;
     background-color: #ffffff;
   }
@@ -2472,7 +2475,6 @@ body {
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     width: 450px;
-    height: 609px;
     padding: 40px;
     background-color: #ffffff;
   }
@@ -2688,7 +2690,7 @@ body {
     letter-spacing: 0.03em;
     color: #757575;
   }
-  .box-checkbox__tex {
+  .box-checkbox__text {
     color: #2196f3;
     text-decoration: underline;
     margin-left: 5px;
@@ -2747,7 +2749,6 @@ body {
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     width: 528px;
-    height: 581px;
     padding: 40px;
     background-color: #ffffff;
   }
@@ -2963,7 +2964,7 @@ body {
     letter-spacing: 0.03em;
     color: #757575;
   }
-  .box-checkbox__text-blue {
+  .box-checkbox__text {
     color: #2196f3;
     text-decoration: underline;
     margin-left: 5px;
@@ -2996,13 +2997,13 @@ body {
   }
 }
 
-@media (min-width: 320px) and (max-width: 1199px) {
+@media (max-width: 1199px) {
   .our-work-section {
     display: none;
   }
 }
 
-@media (min-width: 480px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .contacts__svg-mail {
     width: 16px;
     height: 12px;
