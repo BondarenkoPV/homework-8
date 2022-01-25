@@ -2,35 +2,44 @@
 @media (min-width: 320px) and (max-width: 767px) {
   .hero-section {
     background: $sekondary-background;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     text-align: center;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../img/maine.jpg);
-
-    max-width: 1600px;
+      url(../img/mob.hed.1x.jpg);
+    max-width: 767px;
     margin-left: auto;
     margin-right: auto;
+  }
+  @media (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../img/mob.hed.2x.jpg);
+    }
   }
 
   .hero__text {
+    margin-left: auto;
+    margin-right: auto;
     font-family: Roboto;
     font-style: normal;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
+    font-size: 26px;
+    line-height: 42px;
     letter-spacing: 0.06em;
     color: #ffffff;
-    margin-left: auto;
-    margin-right: auto;
-    width: 696px;
-    height: 120px;
+    width: 360px;
+    height: 84px;
   }
+
   .hero__button {
     margin-top: 30px;
     padding-top: 10px;
@@ -48,7 +57,7 @@
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
-    line-height: 1.87;
+    line-height: 30px;
     letter-spacing: 0.06em;
     color: #ffffff;
   }
