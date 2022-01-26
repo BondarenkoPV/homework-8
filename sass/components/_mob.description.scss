@@ -7,6 +7,8 @@
     background: #ffffff;
   }
   .description {
+    min-height: 320px;
+    max-width: 480px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -19,14 +21,14 @@
     flex-direction: column;
   }
   .description__item {
-    width: 450px;
+   max-width: 450px;
   }
   .description__list :not(:last-child) {
     margin-bottom: 30px;
   }
 
   .description-box {
-    width: 450px;
+   max-width: 450px;
     text-align: center;
     padding-top: 25px;
     padding-bottom: 25px;

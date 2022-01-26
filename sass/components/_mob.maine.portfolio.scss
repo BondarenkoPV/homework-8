@@ -6,6 +6,8 @@
     border: 1px solid #ececec;
   }
   .maine-conteiner {
+    min-width: 320px;
+    max-width: 480px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -69,7 +71,7 @@
 
   .maine__item {
     display: block;
-    width: 450px;
+    max-width: 450px;
     background: #ffffff;
     border: 1px solid #eeeeee;
 
@@ -90,7 +92,7 @@
     line-height: 2;
     letter-spacing: 0.06em;
     color: #212121;
-    width: 402px;
+    max-width: 402px;
     margin-bottom: 4px;
   }
   .text-card__link {
@@ -101,10 +103,10 @@
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: #757575;
-    width: 402px;
+    max-width:402px;
   }
   .text-card {
-    width: 450px;
+    max-width:450px;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 24px;
@@ -114,7 +116,7 @@
   /* выезжающая карточка */
   .box-card {
     position: relative;
-    width: 450px;
+    max-width:  450px;
     height: 294px;
     overflow: hidden;
     &:hover .overlay-card {

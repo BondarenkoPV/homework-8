@@ -35,6 +35,7 @@ body {
     background: #ffffff;
   }
   .header-conteiner {
+    max-width: 480px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -245,6 +246,7 @@ body {
     background: #ffffff;
   }
   .header-conteiner {
+    width: 768px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -505,6 +507,8 @@ body {
     border: 1px solid #ececec;
   }
   .maine-conteiner {
+    min-width: 320px;
+    max-width: 480px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -574,7 +578,7 @@ body {
   }
   .maine__item {
     display: block;
-    width: 450px;
+    max-width: 450px;
     background: #ffffff;
     border: 1px solid #eeeeee;
   }
@@ -593,7 +597,7 @@ body {
     line-height: 2;
     letter-spacing: 0.06em;
     color: #212121;
-    width: 402px;
+    max-width: 402px;
     margin-bottom: 4px;
   }
   .text-card__link {
@@ -604,10 +608,10 @@ body {
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: #757575;
-    width: 402px;
+    max-width: 402px;
   }
   .text-card {
-    width: 450px;
+    max-width: 450px;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 24px;
@@ -616,7 +620,7 @@ body {
   /* выезжающая карточка */
   .box-card {
     position: relative;
-    width: 450px;
+    max-width: 450px;
     height: 294px;
     overflow: hidden;
   }
@@ -658,6 +662,7 @@ body {
     border: 1px solid #ececec;
   }
   .maine-conteiner {
+    width: 768px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -964,6 +969,8 @@ body {
     padding-bottom: 60px;
   }
   .footer-conteiner {
+    min-width: 320px;
+    max-width: 480px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -1198,6 +1205,7 @@ body {
     padding-bottom: 60px;
   }
   .footer-conteiner {
+    width: 768px;
     margin-left: auto;
     margin-right: auto;
     display: -webkit-box;

@@ -1,6 +1,8 @@
 /* Секция герой */
 @media (max-width: 767px) {
   .hero-section {
+    min-width: 320px;
+    
     background: $sekondary-background;
     padding-top: 118px;
     padding-bottom: 118px;
